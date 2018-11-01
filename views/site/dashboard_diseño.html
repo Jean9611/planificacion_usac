@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header{
+        margin: 3px;
+        display:inline;
+        align-self: center;
+      }
+      .content{
+        align-self: left;
+      }
+
+	table {
+	    border-collapse: collapse;
+	}
+
+	table, th, td {
+	    border: 1px solid black;
+	padding: 5px;
+	}
+    </style>
+  </head>
+  <body>
+    <div align="center">
+      <div style="width: 95%">
+        <div align="center" style ="display:inline;">
+          <p class="header">Universidad de San Carlos de Guatemala</p><br/>
+          <p class="header">Facultad de Ingeniería</p><br/>
+          <p class="header">Escuela de Ciencias y Sistemas</p><br/>
+          <br/>
+          <h2 class="header">Programa del laboratorio</h2><br/>
+          <img src="https://www.usac.edu.gt/g/escudo10.png" align="right" width="110px" style="margin-right: 0px; margin-top: -100px;" />
+          <br/><br/>
+        </div>
+        <br/>
+
+        <div class="content" align="left">
+          <h2>Actividades</h2>
+          <p>{%actividades%}<p>
+          <!--table border="1" width="100%">
+            <tr>
+              <th width="20%">Competencia:</th>
+              <th width="20%">Actividad:</td>
+              <th width="30%">Descripción:</td>
+              <th width="30%">Recursos:</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Arquitecto de Software:</th>
+              <td>practica de ...</td>
+              <td>Deberan realizar ...</td>
+              <td>Se utilizarán los recursos de ...</td>
+            </tr>
+            <tr>
+              <td>practica de ...</td>
+              <td>Deberan realizar ...</td>
+              <td>Se utilizarán los recursos de ...</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Arquitecto de Software:</th>
+              <td>practica de ...</td>
+              <td>Deberan realizar ...</td>
+              <td>Se utilizarán los recursos de ...</td>
+            </tr>
+            <tr>
+              <td>practica de ...</td>
+              <td>Deberan realizar ...</td>
+              <td>Se utilizarán los recursos de ...</td>
+            </tr>
+          </table-->
+          <br/>
+        </div>
+    </div>
+
+    <footer>
+      <p><b>Generado por el sistema de planificación por competencias USAC</b></p>
+    </footer>
+  </body>
+</html>

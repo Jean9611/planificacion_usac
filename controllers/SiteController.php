@@ -16,6 +16,7 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
+    public $param;
     public function behaviors()
     {
         return [
@@ -68,10 +69,12 @@ class SiteController extends Controller
         if($model != null){
             if($model->tipo_usuario == 1){
                 //admin
-                return $this->render('index');
+                $this->view->params['user'] = $id;
+                return $this->render("index");
             }else if($model->tipo_usuario == 2){
                 //catedrático
-                Yii::$app->getResponse()->redirect('index.php?r=instancia/index')->send();
+                $this->view->params['user'] = $id;
+                return $this->render("index");
             }else if($model->tipo_usuario == 3){
                 //tutor
                 Yii::$app->getResponse()->redirect('index.php?r=instancia/index')->send();

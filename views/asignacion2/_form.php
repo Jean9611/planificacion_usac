@@ -15,7 +15,7 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_instancia')->dropDownList(ArrayHelper::map(app\models\Instancia::find()->all(),'id_curso','semestre', 'seccion'), ['prompt'=>'Seleccione la seccion']) ?>
+    <?= $form->field($model, 'id_instancia')->dropDownList(ArrayHelper::map(app\models\Instancia::find()->all(),'id_instancia','curso.curso','semestre'), ['prompt'=>'Seleccione el sección']) ?>
 
 
     <div class="form-group">

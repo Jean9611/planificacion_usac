@@ -23,6 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+
+        <a class="btn btn-default" href="/duplicar_perfil.php?id=<?php echo $this->title; ?>">Duplicar</a>
     </p>
 
     <?= DetailView::widget([
